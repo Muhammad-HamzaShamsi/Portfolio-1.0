@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidenav-width{
+    width: 10em;
+
+    animation: menu 1s ;
+}
+.m{
+    animation: main 1s ;
+    margin-left: 160px;
+}
+.none{
+    width: 0px;
+    animation: menu-out 1s ;
+    display: none;
+}
+.wd{
+    
+    animation: main-out 1s ;
+    width: 100%;
+}
+#ham{
+    margin-right: 20px;
+}
+@keyframes menu-out {
+    from {left: 0px;}
+    to {left: -200px;}
+  }
+  @keyframes main-out {
+    from { margin-left: 160px; }
+    to { margin-left: 0px; }
+  }
+
+
+@keyframes menu {
+    from {left: -200px;}
+    to {left: 0px;}
+  }
+  @keyframes main {
+    from { margin-left: 50px; }
+    to { margin-left: 160px; }
+  }
+.sidenav {
+    
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+  
+    align-items: center;
+  }
+  .sidenav .links a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav .links a:hover , .sidenav .links .active {
+    color: #000;
+
+  }
+  /* navbar finished */
+  /*main main menu  */
+  .main{
+    padding: 0px 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+       flex-direction: column;
+  }
+  .top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow:  0px 1px 0px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1); 
+  }
+  .top-nav i{
+      font-size: 1.4rem;
+  }
+  .top-nav i:hover{
+      cursor: pointer;
+  }
+    .profile {
+        width: 100%;
+        display: flex;
+         justify-content: center;
+         align-items: center;
+        text-align: center;
+        flex-direction: column;
+      margin: 20px 0px;
+      height: 32rem;
+
+  }
+  .profile .icon{
+      background-image: url('/Portfolio-Design/assets/img/profile.png');
+     background-size: cover;           
+      border-radius: 50%;
+      width: 13.75rem;
+      height: 13.75rem;
+      background-color: aliceblue;
+  }
+  .profile h1{
+      margin: 10px;
+    }
+    .profile a{
+        text-decoration: none;
+        color: white;
+        background-color: #3532AB;
+        padding: 10px 10px;
+        margin: 5px;
+        display: inline-block;
+    }
+    .profile a:hover{
+        background-color: #000;
+    }
+  .contacts{
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+    font-size: 2rem;
+  }
+  .contacts .fab{
+      margin: 0px 10px;
+      padding: 10px;
+  }
+  .fab:hover{
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow:  2px 2px 2px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1); 
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  @media screen and (max-width: 450px) {
+    .main .profile .icon {width: 8rem; height: 8rem;}
+    .main .profile h1,.top-nav h1{font-size: 1.4rem;}
+    .sidenav-width{ width: 100px;animation: menu 1s ;}
+    .m{animation: main 1s ;margin-left: 100px;}
+    .none{width: 0px;animation: menu-out 1s ;}
+    .wd{animation: main-out 1s ; }
+    @keyframes menu-out {
+        from {left: 0px;}
+        to {left: 100px;}
+      }
+      @keyframes main-out {
+        from { margin-left: 100px; }
+        to { margin-left: 0px; }
+      }
+    @keyframes menu {
+        from {left: -100px;}
+        to {left: 0px;}
+      }
+      @keyframes main {
+        from { margin-left: 50px; }
+        to { margin-left: 100px; }
+      }
+   
+  }

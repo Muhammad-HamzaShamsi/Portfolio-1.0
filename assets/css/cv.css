@@ -1,0 +1,127 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+.container1{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.container h1{
+    margin: 30px 0px 40px 0px;
+}
+.container h1 a{
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+}
+.cv{
+    width: 80%;
+    height: 100%;
+    box-shadow: 4px 2px 2px 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow:  4px 2px 2px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 4px 2px 2px 2px rgba(0,0,0,0.1); 
+}
+.cv .sidebar{
+    width: 100%;
+    background-color: black;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+.cv .main{
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+}
+/* Sidebar Profile */
+.cv .profile{
+    color: #fff;
+    margin: 20px;
+    display: grid;
+    place-items: center;
+}
+.cv .profile .icon{
+    background-image: url(/Portfolio-Design/assets/img/profile.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.cv .profile h2,.cv .profile h4{
+    margin: 5px;
+}
+.cv .profile .line{
+    width: 80%;
+    height: 1px;
+    background-color: grey;
+    margin-top: 20px;
+}
+/* SideBar Contact */
+.cv .contact h2,.cv .edu h2,.cv .lang h2{
+    color: white;
+}
+.cv .contact h4 i{
+    color: white;
+    margin: 2px;
+}
+.cv .contact {
+    padding: 35px;
+    width: 100%;
+    color: grey;
+    margin: 20px;
+}
+
+/* Sidebar EDucation */
+.cv .edu{
+    padding: 35px;
+    width: 100%;
+    color: grey;
+    margin: 20px;
+}
+/* sidebar language */
+.cv .lang{
+    padding: 35px;
+    width: 100%;
+    color: grey;
+    margin: 20px;
+}
+.main .profile2,.main .exp , .main .skill , .main .hobby{
+    margin: 40px 10px;
+}
+.main .hobby .row{
+    margin: 10px;
+    text-align: center;
+}
+.main .hobby .row i{
+font-size: 2rem;
+}
+
+
+@media screen and (max-width: 450px) {
+    .container1,.cv{
+        width: 100%;}
+        .container1 h1 a{
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+}
+@media screen and (max-width: 1400px) {
+  .container1 .cv .profile h2{
+      font-size: 1.6rem;
+  }
+  .container1 .cv .profile h4{
+    font-size: 1.3rem;
+}
+.container1 .cv .profile .icon{
+    width: 180px;
+    height: 180px;
+}
+}
